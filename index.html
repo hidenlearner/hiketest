@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike</title>
+  <!-- this link for tailwind css -->
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body>
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <nav class="bg-stone-50 sm:sticky top-0 shadow-md">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!--
+                Icon when menu is closed.
+    
+                Heroicon name: outline/menu
+    
+                Menu open: "hidden", Menu closed: "block"
+              -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+                Icon when menu is open.
+    
+                Heroicon name: outline/x
+    
+                Menu open: "block", Menu closed: "hidden"
+              -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-around">
+          <div class="flex-shrink-0 flex items-center">
+            <img class="block lg:hidden h-8 w-auto" src="./img/Logo.png" alt="Workflow" />
+            <img class="hidden lg:block h-8 sm:w-auto w-28" src="./img/Logo.png" alt="Workflow" />
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: " text-black" -->
+              <a href="#home" class=" text-black px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+
+              <a href="#products" class="text-black  px-3 py-2 rounded-md text-sm font-medium">Products</a>
+
+              <a href="#contructs" class=" text-black px-3 py-2 rounded-md text-sm font-medium">Contract us</a>
+
+              <a href="#fotter" class=" text-black px-3 py-2 rounded-md text-sm font-medium">About us</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <!-- Current: "bg-gray-900 text-white", Default: " text-black" -->
+          <a href="#home"
+            class="hover:bg-black hover:text-white text-black block px-3 py-2 rounded-md text-base font-medium"
+            aria-current="page">Home</a>
+
+          <a href="#products"
+            class="hover:bg-black hover:text-white text-black block px-3 py-2 rounded-md text-base font-medium">Products</a>
+
+          <a href="#contructs"
+            class="hover:bg-black hover:text-white text-black block px-3 py-2 rounded-md text-base font-medium">Contract
+            us</a>
+
+          <a href="#fotter"
+            class="hover:bg-black hover:text-white text-black block px-3 py-2 rounded-md text-base font-medium">About
+            us</a>
+        </div>
+      </div>
+  </nav>
+  <!-- nav section end form here new section start form here -->
+
+
+
+  <section id="home" class="max-w-7xl bg-stone-50 pb-10 mx-auto px-2 sm:px-6 lg:px-8 sm:flex items-center">
+    <div class="sm:pl-16 p-0">
+      <img class="sm:w-80 sm:h-72 w-full p-5 mx-auto" src="./img/header_sho.png" alt="">
+    </div>
+    <div class="sm:pl-32 p-0 m-5 sm:m-0">
+      <h1 class=" text-5xl text-orange-500 font-bold font-serif pb-3">Nike React <br><span class="text-black"> Infinite
+          run2</span></h1>
+      <p>Need form lorem twelve i need some <br> text fomt here so you can edit this part</p>
+      <button class="bg-blue-500 hover:bg-blue-600 px-10 py-2 mt-2 rounded-md font-bold text-white"><img
+          class="h-8 w-10 inline" src="./img/shopping-cart 1.png" alt=""> buy now</button>
+    </div>
+  </section>
+  <!-- cousel card -->
+  <section id="products" class="max-w-7xl bg-stone-50 pb-10 mx-auto px-2 sm:px-6 lg:px-8">
+    <h1 class="p-6 text-3xl font-semibold">Chousel Shoes</h1>
+    <section class=" max-w-7xl bg-stone-50 pb-10 mx-auto px-2 sm:px-6 lg:px-8 sm:flex gap-5">
+      <div class="border mb-5 sm:mb-0 p-5 card_347834">
+        <img class="w-90 h-72 mx-auto bg-slate-200 px-16 rounded-md" src="./img/1.png" alt="">
+        <h3 class="text-3xl mt-4 font-serif">Nike shoes</h3>
+        <p class="text-xl font-light">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Quod, ipsam.</p>
+        <div class="flex items-center sm:gap-16 justify-between pt-3">
+          <div class="text-orange-500 font-bold text-4xl">$32</div>
+          <div> <button
+              class="bg-blue-500 hover:bg-blue-600 sm:px-10 px-3 py-2 mt-2 rounded-md font-bold text-white"><img
+                class="h-8 w-8 inline" src="./img/shopping-cart 1.png" alt=""> buy now</button></div>
+        </div>
+      </div>
+
+      <div class="border mb-5 sm:mb-0 p-5 card_347834">
+        <img class="w-90 h-72 mx-auto bg-slate-200 px-16 rounded-md" src="./img/2.png" alt="">
+        <h3 class="text-3xl mt-4 font-serif">Nike shoes</h3>
+        <p class="text-xl font-light">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Quod, ipsam.</p>
+        <div class="flex items-center sm:gap-16 justify-between pt-3">
+          <div class="text-orange-500 font-bold text-4xl">$32</div>
+          <div> <button
+              class="bg-blue-500 hover:bg-blue-600 sm:px-10 px-3 py-2 mt-2 rounded-md font-bold text-white"><img
+                class="h-8 w-8 inline" src="./img/shopping-cart 1.png" alt=""> buy now</button></div>
+        </div>
+      </div>
+
+      <div class="border mb-5 sm:mb-0 p-5 card_347834">
+        <img class="w-90 h-72 mx-auto bg-slate-200 px-16 rounded-md" src="./img/3.png" alt="">
+        <h3 class="text-3xl mt-4 font-serif">Nike shoes</h3>
+        <p class="text-xl font-light">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Quod, ipsam.</p>
+        <div class="flex items-center sm:gap-16 justify-between pt-3">
+          <div class="text-orange-500 font-bold text-4xl">$32</div>
+          <div> <button
+              class="bg-blue-500 hover:bg-blue-600 sm:px-10 px-3 py-2 mt-2 rounded-md font-bold text-white"><img
+                class="h-8 w-8 inline" src="./img/shopping-cart 1.png" alt=""> buy now</button></div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- formal card -->
+  <section class="max-w-7xl bg-stone-50 pb-10 mx-auto px-2 sm:px-6 lg:px-8">
+    <h1 class="p-6 text-3xl font-semibold">FORMAL Shoes</h1>
+    <section class=" max-w-7xl bg-stone-50 pb-10 mx-auto px-2 sm:px-6 lg:px-8 sm:flex gap-5">
+      <div class="border mb-5 sm:mb-0 p-5 card_347834">
+        <img class="w-70 h-64 mx-auto  px-16 rounded-md" src="./img/4.png" alt="">
+        <h3 class="text-3xl mt-4 font-serif">Nike shoes</h3>
+        <p class="text-xl font-light">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Quod, ipsam.</p>
+        <div class="flex items-center sm:gap-16 justify-between pt-3">
+          <div class="text-orange-500 font-bold text-4xl">$60</div>
+          <div> <button
+              class="bg-blue-500 hover:bg-blue-600 sm:px-10 px-3 py-2 mt-2 rounded-md font-bold text-white"><img
+                class="h-8 w-8 inline" src="./img/shopping-cart 1.png" alt=""> buy now</button></div>
+        </div>
+      </div>
+
+      <div class="border mb-5 sm:mb-0 p-5 card_347834">
+        <img class="w-70 h-64 mx-auto  px-16 rounded-md" src="./img/5.png" alt="">
+        <h3 class="text-3xl mt-4 font-serif">Nike shoes</h3>
+        <p class="text-xl font-light">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Quod, ipsam.</p>
+        <div class="flex items-center sm:gap-16 justify-between pt-3">
+          <div class="text-orange-500 font-bold text-4xl">$55</div>
+          <div> <button
+              class="bg-blue-500 hover:bg-blue-600 sm:px-10 px-3 py-2 mt-2 rounded-md font-bold text-white"><img
+                class="h-8 w-8 inline" src="./img/shopping-cart 1.png" alt=""> buy now</button></div>
+        </div>
+      </div>
+
+      <div class="border mb-5 sm:mb-0 p-5 card_347834">
+        <img class="w-70 h-64 mx-auto px-16 rounded-md" src="./img/6.png" alt="">
+        <h3 class="text-3xl mt-4 font-serif">Nike shoes</h3>
+        <p class="text-xl font-light">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Quod, ipsam.</p>
+        <div class="flex items-center sm:gap-16 justify-between pt-3">
+          <div class="text-orange-500 font-bold text-4xl">$80</div>
+          <div> <button
+              class="bg-blue-500 hover:bg-blue-600 sm:px-10 px-3 py-2 mt-2 rounded-md font-bold text-white"><img
+                class="h-8 w-8 inline" src="./img/shopping-cart 1.png" alt=""> buy now</button></div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="contructs" class="sm:flex items-center block sm:justify-around sm:p-20 m-8 ">
+    <div class=" mb-8 sm:mb-0">
+      <div class="flex gap-3 items-center shadow-md mb-5">
+        <img class="h-24 w-24" src="./img/x.png" alt="">
+        <p class="text-md font-light">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quos, placeat!</p>
+      </div>
+
+      <div class="flex gap-3 mb-5 items-center shadow-md">
+        <img class="h-24 w-24" src="./img/y.png" alt="">
+        <p class="text-md font-light">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quos, placeat!</p>
+      </div>
+
+      <div class="flex gap-3 mb-5 items-center shadow-md">
+        <img class="h-24 w-24" src="./img/z.png" alt="">
+        <p class="text-md font-light">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quos, placeat!</p>
+      </div>
+    </div>
+    <div>
+      <img class="sm:[max-width:500px;] w-full" src="./img/footer.png" alt="">
+    </div>
+  </section>
+
+
+  <footer id="fotter" class="p-20 bg-black text-center text-white mt-5">
+    <small class="text-center">@copyrightbyxxcn</small>
+  </footer>
+</body>
+
+</html>
